@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Platform belajar online untuk mahasiswa Keperawatan S1 Indonesia. Materi lengkap dari dasar hingga tinggi, dilengkapi gambar anatomi dan latihan soal interaktif.">
+  <title>NurseLearn — Platform Belajar Keperawatan S1</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">🏥</div>
+    <span>Nurse<strong>Learn</strong></span>
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="active">Beranda</a></li>
+    <li><a href="dasar.html">Materi Dasar</a></li>
+    <li><a href="menengah.html">Menengah</a></li>
+    <li><a href="tinggi.html">Tinggi</a></li>
+    <li><a href="quiz.html" class="nav-cta">🎯 Latihan Soal</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <!-- Floating particles -->
+  <div class="particles">
+    <div class="particle" style="width:80px;height:80px;background:var(--primary);top:15%;left:8%;--duration:7s;--delay:0s;border-radius:30% 70% 70% 30%/30% 30% 70% 70%;"></div>
+    <div class="particle" style="width:50px;height:50px;background:var(--secondary);top:70%;left:5%;--duration:9s;--delay:-3s;"></div>
+    <div class="particle" style="width:100px;height:100px;background:var(--primary);top:30%;right:10%;--duration:11s;--delay:-5s;border-radius:50% 50% 30% 70%;"></div>
+    <div class="particle" style="width:60px;height:60px;background:var(--secondary);top:80%;right:15%;--duration:8s;--delay:-2s;"></div>
+  </div>
+
+  <div class="hero-container">
+    <!-- Left: Text -->
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>🩺</span> Platform Belajar Keperawatan S1
+      </div>
+      <h1 class="hero-title">
+        Kuasai Ilmu<br>
+        <span class="gradient-text">Keperawatan</span><br>
+        dengan Mudah
+      </h1>
+      <p class="hero-desc">
+        Materi komprehensif dari anatomi dasar hingga keperawatan kritis, dilengkapi ilustrasi organ tubuh dan latihan soal interaktif untuk mahasiswa keperawatan S1 Indonesia.
+      </p>
+
+      <!-- EKG Line -->
+      <div class="ekg-container" style="margin-bottom:1.5rem;">
+        <canvas id="ekg-canvas" width="500" height="50" style="max-width:100%;"></canvas>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="dasar.html" class="btn btn-primary">
+          📚 Mulai Belajar
+        </a>
+        <a href="quiz.html" class="btn btn-secondary">
+          🎯 Latihan Soal
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number" data-target="12" data-suffix="+" id="stat-materi">0+</div>
+          <div class="stat-label">Topik Materi</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="30" data-suffix="+" id="stat-soal">0+</div>
+          <div class="stat-label">Latihan Soal</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="3" data-suffix=" Level" id="stat-level">0 Level</div>
+          <div class="stat-label">Tingkat Materi</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="hero-visual">
+      <div class="hero-image-wrapper">
+        <img src="images/nurse_hero.png" alt="Perawat Profesional" onerror="this.style.display='none'">
+
+        <div class="hero-floating-card card-1">
+          <div class="floating-icon" style="background:rgba(26,86,219,0.2);">❤️</div>
+          <div class="floating-info">
+            <div class="label">HR Normal</div>
+            <div class="value">60–100 bpm</div>
+          </div>
+        </div>
+
+        <div class="hero-floating-card card-2">
+          <div class="floating-icon" style="background:rgba(5,150,105,0.2);">💉</div>
+          <div class="floating-info">
+            <div class="label">SpO₂ Normal</div>
+            <div class="value">95–100%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEVEL SECTION -->
+<section class="section" id="materi">
+  <div class="section-container">
+    <div class="section-header">
+      <div class="section-badge blue">📖 Kurikulum</div>
+      <h2 class="section-title">Pilih <span class="text-gradient">Level Belajar</span></h2>
+      <p class="section-subtitle">Materi disusun secara bertahap sesuai jenjang kemampuan mahasiswa keperawatan S1</p>
+    </div>
+
+    <div class="level-cards">
+      <!-- Dasar -->
+      <div class="level-card dasar" data-aos onclick="window.location='dasar.html'">
+        <div class="level-card-header">
+          <div class="level-icon">🔬</div>
+          <div class="level-title">Materi Dasar</div>
+          <div class="level-subtitle">Semester 1–2 · Fondasi Ilmu Keperawatan</div>
+        </div>
+        <div class="level-card-body">
+          <ul class="level-topics">
+            <li>Anatomi & Fisiologi Manusia</li>
+            <li>Sistem Kardiovaskular</li>
+            <li>Sistem Pernapasan</li>
+            <li>Sistem Muskuloskeletal</li>
+            <li>Sistem Saraf & Endokrin</li>
+          </ul>
+          <div class="level-meta">
+            <span>📝 5 topik · 10 soal latihan</span>
+            <a href="dasar.html" class="btn btn-sm" style="background:var(--gradient-dasar);color:white;">Mulai →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menengah -->
+      <div class="level-card menengah" data-aos data-aos-delay="200" onclick="window.location='menengah.html'">
+        <div class="level-card-header">
+          <div class="level-icon">⚕️</div>
+          <div class="level-title">Materi Menengah</div>
+          <div class="level-subtitle">Semester 3–5 · Klinisi Keperawatan</div>
+        </div>
+        <div class="level-card-body">
+          <ul class="level-topics">
+            <li>Farmakologi Dasar</li>
+            <li>Keperawatan Medikal Bedah</li>
+            <li>Patofisiologi Penyakit</li>
+            <li>Prosedur Keperawatan</li>
+            <li>Tanda-Tanda Vital</li>
+          </ul>
+          <div class="level-meta">
+            <span>📝 5 topik · 10 soal latihan</span>
+            <a href="menengah.html" class="btn btn-sm" style="background:var(--gradient-menengah);color:white;">Mulai →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tinggi -->
+      <div class="level-card tinggi" data-aos data-aos-delay="400" onclick="window.location='tinggi.html'">
+        <div class="level-card-header">
+          <div class="level-icon">🏥</div>
+          <div class="level-title">Materi Tinggi</div>
+          <div class="level-subtitle">Semester 6–8 · Profesi Keperawatan</div>
+        </div>
+        <div class="level-card-body">
+          <ul class="level-topics">
+            <li>Keperawatan Kritis (ICU/CCU)</li>
+            <li>Keperawatan Jiwa</li>
+            <li>Keperawatan Komunitas</li>
+            <li>Manajemen Keperawatan</li>
+            <li>Keperawatan Paliatif</li>
+          </ul>
+          <div class="level-meta">
+            <span>📝 5 topik · 10 soal latihan</span>
+            <a href="tinggi.html" class="btn btn-sm" style="background:var(--gradient-tinggi);color:white;">Mulai →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FITUR SECTION -->
+<section class="section" style="background:rgba(15,32,64,0.5);padding-top:4rem;padding-bottom:4rem;">
+  <div class="section-container">
+    <div class="section-header">
+      <div class="section-badge green">✨ Keunggulan</div>
+      <h2 class="section-title">Kenapa <span class="text-gradient">NurseLearn?</span></h2>
+    </div>
+
+    <div class="features-grid">
+      <div class="card" data-aos>
+        <div class="card-icon" style="background:rgba(26,86,219,0.15);">🫀</div>
+        <h4 style="color:var(--dark-text);margin-bottom:0.5rem;">Ilustrasi Organ Lengkap</h4>
+        <p style="font-size:0.9rem;">Gambar anatomi berkualitas tinggi untuk memudahkan menghapal sistem organ tubuh manusia.</p>
+      </div>
+      <div class="card" data-aos data-aos-delay="100">
+        <div class="card-icon" style="background:rgba(5,150,105,0.15);">🎯</div>
+        <h4 style="color:var(--dark-text);margin-bottom:0.5rem;">Latihan Soal Interaktif</h4>
+        <p style="font-size:0.9rem;">Bank soal dengan timer, pembahasan lengkap, dan penilaian otomatis di setiap topik.</p>
+      </div>
+      <div class="card" data-aos data-aos-delay="200">
+        <div class="card-icon" style="background:rgba(124,58,237,0.15);">📊</div>
+        <h4 style="color:var(--dark-text);margin-bottom:0.5rem;">Materi Bertingkat</h4>
+        <p style="font-size:0.9rem;">Dari anatomi dasar semester 1 hingga keperawatan kritis profesi, tersusun sistematis.</p>
+      </div>
+      <div class="card" data-aos data-aos-delay="300">
+        <div class="card-icon" style="background:rgba(217,119,6,0.15);">📱</div>
+        <h4 style="color:var(--dark-text);margin-bottom:0.5rem;">Akses Kapan Saja</h4>
+        <p style="font-size:0.9rem;">Website statis yang ringan dan responsif, bisa dibuka di HP maupun laptop tanpa internet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK STATS -->
+<section class="section" style="padding-top:4rem;padding-bottom:4rem;">
+  <div class="section-container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.5rem;text-align:center;">
+      <div data-aos>
+        <div style="font-size:3rem;margin-bottom:0.5rem;">🫁</div>
+        <h4 style="color:var(--dark-text);">Sistem Pernapasan</h4>
+        <p style="font-size:0.85rem;">Trakea, Bronkus, Alveoli</p>
+      </div>
+      <div data-aos data-aos-delay="100">
+        <div style="font-size:3rem;margin-bottom:0.5rem;">🫀</div>
+        <h4 style="color:var(--dark-text);">Sistem Kardiovaskular</h4>
+        <p style="font-size:0.85rem;">Jantung, Pembuluh Darah</p>
+      </div>
+      <div data-aos data-aos-delay="200">
+        <div style="font-size:3rem;margin-bottom:0.5rem;">🧠</div>
+        <h4 style="color:var(--dark-text);">Sistem Saraf</h4>
+        <p style="font-size:0.85rem;">Otak, Korda Spinalis, Saraf</p>
+      </div>
+      <div data-aos data-aos-delay="300">
+        <div style="font-size:3rem;margin-bottom:0.5rem;">🦴</div>
+        <h4 style="color:var(--dark-text);">Sistem Muskuloskeletal</h4>
+        <p style="font-size:0.85rem;">206 Tulang, Otot, Sendi</p>
+      </div>
+      <div data-aos data-aos-delay="400">
+        <div style="font-size:3rem;margin-bottom:0.5rem;">💊</div>
+        <h4 style="color:var(--dark-text);">Farmakologi</h4>
+        <p style="font-size:0.85rem;">Obat, Dosis, Rute Pemberian</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:1rem;">
+        <div class="logo-icon">🏥</div>
+        <span>Nurse<strong>Learn</strong></span>
+      </div>
+      <p>Platform edukasi keperawatan untuk mahasiswa S1 Indonesia. Belajar lebih mudah, lebih menarik, lebih efektif.</p>
+    </div>
+    <div class="footer-links">
+      <h6>Materi</h6>
+      <ul>
+        <li><a href="dasar.html">🔬 Materi Dasar</a></li>
+        <li><a href="menengah.html">⚕️ Materi Menengah</a></li>
+        <li><a href="tinggi.html">🏥 Materi Tinggi</a></li>
+        <li><a href="quiz.html">🎯 Latihan Soal</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h6>Topik Populer</h6>
+      <ul>
+        <li><a href="dasar.html">Anatomi Jantung</a></li>
+        <li><a href="dasar.html">Sistem Pernapasan</a></li>
+        <li><a href="menengah.html">Farmakologi</a></li>
+        <li><a href="tinggi.html">Keperawatan Kritis</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 NurseLearn · Untuk Mahasiswa Keperawatan S1 Indonesia 🇮🇩</span>
+    <span>Made with ❤️ untuk masa depan kesehatan bangsa</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

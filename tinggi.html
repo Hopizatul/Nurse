@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Materi tinggi keperawatan S1: Keperawatan kritis ICU/CCU, keperawatan jiwa, keperawatan komunitas, dan manajemen keperawatan. Dilengkapi latihan soal UKOM.">
+  <title>Materi Tinggi — NurseLearn Keperawatan S1</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo"><div class="logo-icon">🏥</div><span>Nurse<strong>Learn</strong></span></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="dasar.html">Materi Dasar</a></li>
+    <li><a href="menengah.html">Menengah</a></li>
+    <li><a href="tinggi.html" class="active">Tinggi</a></li>
+    <li><a href="quiz.html" class="nav-cta">🎯 Latihan Soal</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-content">
+    <div class="section-badge purple" style="margin:0 auto 1rem;">🏥 Level Tinggi</div>
+    <h1>Materi <span class="text-gradient">Tinggi Keperawatan</span></h1>
+    <p style="color:var(--dark-subtext);margin-top:1rem;font-size:1.05rem;">Keperawatan Kritis · Jiwa · Komunitas · Manajemen · Paliatif</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem;">
+      <span class="chip">📚 5 Topik Materi</span>
+      <span class="chip">🎯 10 Soal Setara UKOM</span>
+      <span class="chip">🏆 Level Profesi</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="materi-layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-title">📋 Daftar Materi</div>
+    <ul class="sidebar-nav">
+      <li><a href="#kritis" class="active"><span class="nav-icon">🚨</span> Keperawatan Kritis</a></li>
+      <li><a href="#jiwa"><span class="nav-icon">🧘</span> Keperawatan Jiwa</a></li>
+      <li><a href="#komunitas"><span class="nav-icon">🌍</span> Keperawatan Komunitas</a></li>
+      <li><a href="#manajemen"><span class="nav-icon">📋</span> Manajemen Keperawatan</a></li>
+      <li><a href="#paliatif"><span class="nav-icon">🕊️</span> Keperawatan Paliatif</a></li>
+    </ul>
+    <hr class="divider">
+    <a href="quiz.html?level=tinggi" class="btn btn-sm w-100" style="justify-content:center;background:var(--gradient-tinggi);color:white;">🎯 Latihan Soal Tinggi</a>
+    <div style="margin-top:1rem;padding:1rem;background:rgba(124,58,237,0.1);border-radius:var(--border-radius-sm);border:1px solid rgba(124,58,237,0.2);">
+      <div style="font-size:0.75rem;color:#A78BFA;font-weight:600;margin-bottom:0.5rem;">🎓 Tips UKOM</div>
+      <p style="font-size:0.78rem;color:var(--dark-subtext);margin:0;">Soal tingkat tinggi sering menguji kemampuan analisis dan prioritas tindakan keperawatan — bukan sekedar hafalan.</p>
+    </div>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="materi-content">
+
+    <!-- ========== 1. KEPERAWATAN KRITIS ========== -->
+    <div class="materi-section" id="kritis">
+      <div class="materi-section-header">
+        <div class="materi-header-left">
+          <div class="materi-section-icon" style="background:rgba(220,38,38,0.15);">🚨</div>
+          <div>
+            <div class="materi-section-title">Keperawatan Kritis (ICU/CCU)</div>
+            <div class="materi-section-subtitle">Monitoring Hemodinamik, Syok, Ventilator & Resusitasi</div>
+          </div>
+        </div>
+        <svg class="accordion-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="materi-section-body">
+        <div class="content-intro">
+          Keperawatan kritis berfokus pada pasien dengan kondisi mengancam jiwa yang membutuhkan pemantauan intensif dan intervensi berkelanjutan. Perawat ICU harus mampu membaca tanda-tanda perburukan kondisi dengan cepat.
+        </div>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">🩺 Monitoring Hemodinamik</h4>
+        <table class="materi-table">
+          <thead>
+            <tr><th>Parameter</th><th>Nilai Normal</th><th>Makna Klinis</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>MAP (Mean Arterial Pressure)</td><td>70–100 mmHg</td><td>Perfusi organ. MAP &lt;65 = hipoperfusi (syok)</td></tr>
+            <tr><td>CVP (Central Venous Pressure)</td><td>2–6 mmHg (1–8 cmH₂O)</td><td>Preload jantung kanan. ↓ = hipovolemia, ↑ = overload</td></tr>
+            <tr><td>HR (Heart Rate)</td><td>60–100 bpm</td><td>Takikardia persisten → kompensasi syok</td></tr>
+            <tr><td>SpO₂</td><td>95–100%</td><td>&lt;90% = hipoksemia berat → oksigenasi segera</td></tr>
+            <tr><td>Urine Output</td><td>≥0.5 mL/kgBB/jam</td><td>Indikator perfusi ginjal. Oliguria = syok/AKI</td></tr>
+            <tr><td>Laktat darah</td><td>&lt;2 mmol/L</td><td>>2 = hipoperfusi jaringan. >4 = syok berat</td></tr>
+          </tbody>
+        </table>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">🆘 Klasifikasi Syok</h4>
+        <div class="info-grid">
+          <div class="info-box red">
+            <h5>Syok Hipovolemik</h5>
+            <ul>
+              <li>Penyebab: perdarahan, dehidrasi, luka bakar</li>
+              <li>Gejala: takikardia, hipotensi, CRT &gt;2 dtk, UO ↓</li>
+              <li>Tatalaksana: resusitasi cairan kristaloid 20-30 mL/kgBB</li>
+              <li>Monitor: TD, HR, CVP, UO, laktat serial</li>
+            </ul>
+          </div>
+          <div class="info-box orange">
+            <h5>Syok Septik</h5>
+            <ul>
+              <li>Sepsis + MAP &lt;65 mmHg + laktat &gt;2 mmol/L</li>
+              <li>Vasodilatasi masif → hipotensi refrakter</li>
+              <li>Tatalaksana: cairan, vasopressor (norepinefrin)</li>
+              <li>Antibiotik dalam 1 jam sejak diagnosis</li>
+            </ul>
+          </div>
+          <div class="info-box blue">
+            <h5>Syok Kardiogenik</h5>
+            <ul>
+              <li>Disfungsi pompa jantung (IMA, CHF berat)</li>
+              <li>CO ↓↓, SVR ↑ (vasokonstriksi kompensasi)</li>
+              <li>Gejala: edema paru, S3 gallop, JVD</li>
+              <li>Tatalaksana: inotropik (dobutamin), diuretik</li>
+            </ul>
+          </div>
+          <div class="info-box purple">
+            <h5>Syok Anafilaktik</h5>
+            <ul>
+              <li>Reaksi hipersensitivitas tipe I berat</li>
+              <li>Gejala: urtikaria, angioedema, bronkospasme, kolaps</li>
+              <li>SEGERA: Epinefrin 0.3-0.5 mg IM (lateral paha)</li>
+              <li>Posisi: supinasi kaki elevasi (kecuali sesak)</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">💨 Ventilasi Mekanik — Pengaturan Dasar</h4>
+        <div class="info-grid">
+          <div class="info-box blue">
+            <h5>Indikasi Ventilator</h5>
+            <ul>
+              <li>Apnea atau henti napas</li>
+              <li>RR &gt;35 atau &lt;8 x/mnt yang tidak membaik</li>
+              <li>GCS ≤8 (lindungi airway)</li>
+              <li>PaO₂ &lt;60 mmHg dengan O₂ maksimal</li>
+              <li>PaCO₂ &gt;55 mmHg dengan pH &lt;7.25</li>
+            </ul>
+          </div>
+          <div class="info-box green">
+            <h5>Pengaturan Ventilator</h5>
+            <ul>
+              <li>Volume Tidal: 6–8 mL/kgBB ideal</li>
+              <li>FiO₂: mulai 100%, turunkan bertahap</li>
+              <li>PEEP: 5 cmH₂O (standar), ↑ pada ARDS</li>
+              <li>Tekanan plateau &lt;30 cmH₂O</li>
+              <li>RR: 12–20 x/mnt (sesuai AGD)</li>
+            </ul>
+          </div>
+          <div class="info-box orange">
+            <h5>Perawatan Pasien Ventilator</h5>
+            <ul>
+              <li>Head of bed 30-45° (cegah VAP)</li>
+              <li>Oral hygiene setiap 4-6 jam</li>
+              <li>Cek balon (cuff) ET tube 20-30 cmH₂O</li>
+              <li>Suction bila perlu (bukan rutin)</li>
+              <li>Monitor alarm ventilator 24 jam</li>
+              <li>Daily SBT (Spontaneous Breathing Trial)</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="quiz-cta" onclick="openQuiz('tinggi')">
+          <div class="quiz-cta-left">
+            <div class="quiz-cta-icon">🎯</div>
+            <div><h4>Latihan Soal Level Tinggi!</h4><p>10 soal setara UKOM — analisis & prioritas tindakan</p></div>
+          </div>
+          <a class="btn btn-sm">Mulai Soal →</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========== 2. KEPERAWATAN JIWA ========== -->
+    <div class="materi-section" id="jiwa">
+      <div class="materi-section-header">
+        <div class="materi-header-left">
+          <div class="materi-section-icon" style="background:rgba(124,58,237,0.15);">🧘</div>
+          <div>
+            <div class="materi-section-title">Keperawatan Jiwa</div>
+            <div class="materi-section-subtitle">Gangguan Jiwa, Komunikasi Terapeutik & Terapi</div>
+          </div>
+        </div>
+        <svg class="accordion-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="materi-section-body">
+        <div class="content-intro">
+          Keperawatan jiwa adalah spesialisasi yang berfokus pada kesehatan mental dan psikiatri. Perawat jiwa menggunakan diri sendiri secara terapeutik (therapeutic use of self) sebagai alat utama intervensi.
+        </div>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">🧠 Gangguan Jiwa Utama</h4>
+        <div class="info-grid">
+          <div class="info-box purple">
+            <h5>Skizofrenia</h5>
+            <ul>
+              <li>Gejala positif: halusinasi, waham, disorganisasi</li>
+              <li>Gejala negatif: afek datar, avolition, alogia</li>
+              <li>Halusinasi dengar paling sering</li>
+              <li>Strategi: identifikasi, distraksi, menghardik</li>
+              <li>Obat: antipsikotik (haloperidol, risperidone)</li>
+            </ul>
+          </div>
+          <div class="info-box blue">
+            <h5>Depresi Mayor (MDD)</h5>
+            <ul>
+              <li>≥5 gejala ≥2 minggu (termasuk mood depresi/anhedonia)</li>
+              <li>Gejala: insomnia, penurunan BB, fatigue, hopelessness</li>
+              <li>Risiko bunuh diri: kaji selalu!</li>
+              <li>Terapi: SSRI + CBT</li>
+              <li>Bantu aktivitas sehari-hari, dukung sosial</li>
+            </ul>
+          </div>
+          <div class="info-box orange">
+            <h5>Gangguan Kecemasan (Anxiety)</h5>
+            <ul>
+              <li>GAD: kekhawatiran berlebihan ≥6 bulan</li>
+              <li>Gejala somatik: palpitasi, berkeringat, gemetar</li>
+              <li>Tingkatan: ringan, sedang, berat, panik</li>
+              <li>Intervensi: teknik relaksasi, napas dalam</li>
+              <li>Terapi: CBT, buspiron, benzodiazepin (jangka pendek)</li>
+            </ul>
+          </div>
+          <div class="info-box red">
+            <h5>Risiko Bunuh Diri</h5>
+            <ul>
+              <li>Kaji: ideasi, rencana, niat, sarana, percobaan sebelumnya</li>
+              <li>Pertahankan lingkungan aman (suicide precaution)</li>
+              <li>Jalin hubungan terapeutik, tidak menghakimi</li>
+              <li>No-harm contract (kontrak keselamatan)</li>
+              <li>Rujuk psikiater segera jika risiko tinggi</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">💬 Komunikasi Terapeutik (Peplau)</h4>
+        <div class="info-grid">
+          <div class="info-box blue">
+            <h5>4 Fase Hubungan Terapeutik</h5>
+            <ul>
+              <li><strong>Orientasi:</strong> kenalan, kontrak, identifikasi masalah</li>
+              <li><strong>Identifikasi:</strong> klien mulai terlibat, ekspresikan perasaan</li>
+              <li><strong>Eksploitasi:</strong> manfaatkan layanan, capai tujuan</li>
+              <li><strong>Resolusi:</strong> terminasi, evaluasi, kemandirian klien</li>
+            </ul>
+          </div>
+          <div class="info-box green">
+            <h5>Teknik Komunikasi Terapeutik</h5>
+            <ul>
+              <li>Mendengarkan aktif (active listening)</li>
+              <li>Klarifikasi & refleksi perasaan</li>
+              <li>Pertanyaan terbuka → eksplorasi lebih dalam</li>
+              <li>Diam terapeutik (therapeutic silence)</li>
+              <li>Memberikan informasi, mengakui, validasi</li>
+            </ul>
+          </div>
+          <div class="info-box red">
+            <h5>Komunikasi NON-Terapeutik (Hindari!)</h5>
+            <ul>
+              <li>Menasihati berlebihan: "Seharusnya kamu..."</li>
+              <li>Meminimalkan perasaan: "Tenang saja, tidak apa-apa"</li>
+              <li>Pertanyaan probing berlebihan</li>
+              <li>Berbagi pengalaman pribadi berlebihan</li>
+              <li>Persetujuan/penolakan berlebihan</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="quiz-cta" onclick="openQuiz('tinggi')">
+          <div class="quiz-cta-left">
+            <div class="quiz-cta-icon">🎯</div>
+            <div><h4>Latihan Soal Jiwa!</h4><p>Soal-soal tentang gangguan jiwa dan komunikasi terapeutik</p></div>
+          </div>
+          <a class="btn btn-sm">Mulai Soal →</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========== 3. KEPERAWATAN KOMUNITAS ========== -->
+    <div class="materi-section" id="komunitas">
+      <div class="materi-section-header">
+        <div class="materi-header-left">
+          <div class="materi-section-icon" style="background:rgba(5,150,105,0.15);">🌍</div>
+          <div>
+            <div class="materi-section-title">Keperawatan Komunitas</div>
+            <div class="materi-section-subtitle">Epidemiologi, PHN, Program Kesehatan & Puskesmas</div>
+          </div>
+        </div>
+        <svg class="accordion-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="materi-section-body">
+        <div class="content-intro">
+          Keperawatan komunitas (Community Health Nursing) berfokus pada peningkatan kesehatan dan pencegahan penyakit populasi/kelompok masyarakat, bukan hanya individu. Mengintegrasikan prinsip kesehatan masyarakat dan keperawatan.
+        </div>
+
+        <div class="info-grid">
+          <div class="info-box green">
+            <h5>🏘️ Pengkajian Komunitas</h5>
+            <ul>
+              <li>Windshield Survey: observasi komunitas dari kendaraan</li>
+              <li>Data primer: wawancara, observasi, kuesioner, PE warga</li>
+              <li>Data sekunder: Dinkes, BPS, rekam medis puskesmas</li>
+              <li>Anderson-McFarlane: 8 subsistem komunitas</li>
+              <li>Profil komunitas: demografi, morbiditas, mortalitas</li>
+            </ul>
+          </div>
+          <div class="info-box blue">
+            <h5>📊 Konsep Epidemiologi</h5>
+            <ul>
+              <li>Insidens: kasus baru per populasi per waktu</li>
+              <li>Prevalens: semua kasus (baru+lama) per populasi</li>
+              <li>CFR (Case Fatality Rate): kematian/kasus × 100%</li>
+              <li>Angka kesakitan (morbiditas)</li>
+              <li>Angka kematian (mortalitas): umum, khusus, IMR, MMR</li>
+            </ul>
+          </div>
+          <div class="info-box orange">
+            <h5>💉 Program Kesehatan Prioritas</h5>
+            <ul>
+              <li>Imunisasi: BCG, DPT, Polio, Campak, HBV, PCV</li>
+              <li>ANC (Antenatal Care): min. 6 kali selama kehamilan</li>
+              <li>Posyandu: pemantauan tumbuh kembang balita</li>
+              <li>Posbindu PTM: deteksi dini penyakit tidak menular</li>
+              <li>Kesehatan Jiwa Masyarakat (CMHC)</li>
+            </ul>
+          </div>
+          <div class="info-box purple">
+            <h5>🏥 Peran Perawat di Puskesmas</h5>
+            <ul>
+              <li>PHN (Public Health Nurse): home visit, community care</li>
+              <li>Promotif: penyuluhan, pendidikan kesehatan</li>
+              <li>Preventif: imunisasi, screening, sanitasi</li>
+              <li>Kuratif: pengobatan dasar, rawat jalan</li>
+              <li>Rehabilitatif: pemulihan pasca sakit</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">🏠 Keperawatan Keluarga</h4>
+        <div class="info-grid">
+          <div class="info-box blue">
+            <h5>Tugas Kesehatan Keluarga (5 Tugas)</h5>
+            <ul>
+              <li>1. Mengenal masalah kesehatan</li>
+              <li>2. Memutuskan tindakan yang tepat</li>
+              <li>3. Merawat anggota yang sakit</li>
+              <li>4. Memodifikasi lingkungan</li>
+              <li>5. Memanfaatkan fasilitas kesehatan</li>
+            </ul>
+          </div>
+          <div class="info-box green">
+            <h5>Tahap Perkembangan Keluarga</h5>
+            <ul>
+              <li>I: Pasangan baru (tanpa anak)</li>
+              <li>II: Childbearing (anak pertama &lt;30 bulan)</li>
+              <li>III: Anak prasekolah</li>
+              <li>IV-VI: Anak sekolah, remaja, melepas anak</li>
+              <li>VII-VIII: Middle age, aging family</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="quiz-cta" onclick="openQuiz('tinggi')">
+          <div class="quiz-cta-left">
+            <div class="quiz-cta-icon">🎯</div>
+            <div><h4>Latihan Soal Komunitas!</h4><p>Uji pengetahuan keperawatan komunitas & epidemiologi</p></div>
+          </div>
+          <a class="btn btn-sm">Mulai Soal →</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========== 4. MANAJEMEN KEPERAWATAN ========== -->
+    <div class="materi-section" id="manajemen">
+      <div class="materi-section-header">
+        <div class="materi-header-left">
+          <div class="materi-section-icon" style="background:rgba(26,86,219,0.15);">📋</div>
+          <div>
+            <div class="materi-section-title">Manajemen Keperawatan</div>
+            <div class="materi-section-subtitle">Kepemimpinan, MPKP, Mutu & Manajemen Konflik</div>
+          </div>
+        </div>
+        <svg class="accordion-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="materi-section-body">
+        <div class="content-intro">
+          Manajemen keperawatan mencakup fungsi perencanaan (planning), pengorganisasian (organizing), ketenagaan (staffing), pengarahan (directing), dan pengontrolan (controlling) pelayanan keperawatan.
+        </div>
+
+        <div class="info-grid">
+          <div class="info-box blue">
+            <h5>👑 Gaya Kepemimpinan Keperawatan</h5>
+            <ul>
+              <li>Otoriter: pemimpin memutuskan sendiri, efisien tapi tidak fleksibel</li>
+              <li>Demokratis: melibatkan tim, meningkatkan kepuasan kerja</li>
+              <li>Laissez-faire: kebebasan penuh pada tim, cocok untuk tim expert</li>
+              <li>Transformasional: inspirasi, visi, perubahan positif (ideal)</li>
+              <li>Transaksional: berbasis reward-punishment</li>
+            </ul>
+          </div>
+          <div class="info-box green">
+            <h5>🏗️ Model Praktik Keperawatan Profesional (MPKP)</h5>
+            <ul>
+              <li>Model Fungsional: task-oriented, efisien tapi fragmentasi</li>
+              <li>Model Tim: ketua tim + anggota tim, continuity lebih baik</li>
+              <li>Model Primer: 1 RN bertanggung jawab 24 jam</li>
+              <li>Model Kasus: 1 perawat-1 pasien (ICU, VIP)</li>
+              <li>Tim-Primer (modifikasi): Rekomendasi Depkes RI</li>
+            </ul>
+          </div>
+          <div class="info-box orange">
+            <h5>📊 Indikator Mutu Keperawatan (NDNQI)</h5>
+            <ul>
+              <li>Patient Falls Rate (angka jatuh pasien)</li>
+              <li>Pressure Ulcer Incidence (luka tekan nosokomial)</li>
+              <li>CAUTI (infeksi saluran kemih kateter-associated)</li>
+              <li>CLABSI (infeksi darah dari jalur sentral)</li>
+              <li>VAP (ventilator-associated pneumonia)</li>
+              <li>Kepuasan pasien & kepuasan perawat</li>
+            </ul>
+          </div>
+          <div class="info-box purple">
+            <h5>⚖️ Manajemen Konflik</h5>
+            <ul>
+              <li>Competing: menang sendiri (tidak ideal, kecuali darurat)</li>
+              <li>Accommodating: mengalah demi hubungan</li>
+              <li>Avoiding: menghindari (masalah tidak terselesaikan)</li>
+              <li>Compromising: saling beri-terima, win-some</li>
+              <li>Collaborating: win-win, solusi terbaik bersama (ideal)</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="quiz-cta" onclick="openQuiz('tinggi')">
+          <div class="quiz-cta-left">
+            <div class="quiz-cta-icon">🎯</div>
+            <div><h4>Latihan Soal Manajemen!</h4><p>Soal kepemimpinan, mutu, dan manajemen keperawatan</p></div>
+          </div>
+          <a class="btn btn-sm">Mulai Soal →</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========== 5. KEPERAWATAN PALIATIF ========== -->
+    <div class="materi-section" id="paliatif">
+      <div class="materi-section-header">
+        <div class="materi-header-left">
+          <div class="materi-section-icon" style="background:rgba(217,119,6,0.15);">🕊️</div>
+          <div>
+            <div class="materi-section-title">Keperawatan Paliatif</div>
+            <div class="materi-section-subtitle">End-of-Life Care, Manajemen Nyeri & Dukungan Psikospiritual</div>
+          </div>
+        </div>
+        <svg class="accordion-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="materi-section-body">
+        <div class="content-intro">
+          Perawatan paliatif adalah pendekatan holistik untuk meningkatkan kualitas hidup pasien dengan penyakit mengancam jiwa beserta keluarganya — bukan mempercepat atau menunda kematian.
+        </div>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">🎯 Prinsip & Tujuan Paliatif (WHO)</h4>
+        <div class="info-grid">
+          <div class="info-box orange">
+            <h5>🕊️ Tujuan Utama Paliatif</h5>
+            <ul>
+              <li>Meningkatkan kualitas hidup pasien & keluarga</li>
+              <li>Manajemen nyeri dan gejala yang baik</li>
+              <li>Dukungan psikologis, sosial, spiritual</li>
+              <li>Fasilitasi komunikasi honest tentang prognosis</li>
+              <li>Tidak mempercepat maupun menunda kematian</li>
+              <li>Dukungan berduka (bereavement) untuk keluarga</li>
+            </ul>
+          </div>
+          <div class="info-box blue">
+            <h5>💊 Manajemen Nyeri WHO (Tangga Analgesik)</h5>
+            <ul>
+              <li>Step 1 (nyeri ringan): Non-opioid (paracetamol, NSAID)</li>
+              <li>Step 2 (nyeri sedang): Opioid lemah (kodein, tramadol)</li>
+              <li>Step 3 (nyeri berat): Opioid kuat (morfin, oksikodon)</li>
+              <li>Prinsip: by mouth, by the clock, by the ladder</li>
+              <li>Adjuvan: antidepresan, antikonvulsan, kortikosteroid</li>
+            </ul>
+          </div>
+          <div class="info-box green">
+            <h5>💚 Peran Perawat Paliatif</h5>
+            <ul>
+              <li>Koordinator tim interdisiplin (dokter, psikolog, rohaniwan, SW)</li>
+              <li>Edukasi pasien & keluarga tentang kondisi penyakit</li>
+              <li>Manajemen gejala: nyeri, mual, sesak, konstipasi</li>
+              <li>Fasilitasi komunikasi yang sulit (bad news delivery)</li>
+              <li>Perawatan menjelang kematian (death & dying)</li>
+              <li>Dukungan spiritual sesuai keyakinan pasien</li>
+            </ul>
+          </div>
+          <div class="info-box purple">
+            <h5>😢 Tahap Berduka (Kübler-Ross)</h5>
+            <ul>
+              <li>Denial (penyangkalan): "Ini tidak mungkin terjadi"</li>
+              <li>Anger (kemarahan): "Mengapa ini terjadi padaku?"</li>
+              <li>Bargaining (tawar-menawar): "Kalau saja aku..."</li>
+              <li>Depression (depresi): kesedihan mendalam</li>
+              <li>Acceptance (penerimaan): damai dengan kondisi</li>
+              <li>NB: Tidak semua melalui urutan ini!</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="quiz-cta" onclick="openQuiz('tinggi')">
+          <div class="quiz-cta-left">
+            <div class="quiz-cta-icon">🎯</div>
+            <div><h4>Selesai Semua Materi Tinggi! 🏆</h4><p>Kerjakan 10 soal setara UKOM — uji kemampuan analisis kamu</p></div>
+          </div>
+          <a class="btn btn-sm">Mulai Latihan UKOM →</a>
+        </button>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:1rem;"><div class="logo-icon">🏥</div><span>Nurse<strong>Learn</strong></span></div>
+      <p>Platform edukasi keperawatan untuk mahasiswa S1 Indonesia.</p>
+    </div>
+    <div class="footer-links">
+      <h6>Materi</h6>
+      <ul>
+        <li><a href="dasar.html">🔬 Materi Dasar</a></li>
+        <li><a href="menengah.html">⚕️ Materi Menengah</a></li>
+        <li><a href="tinggi.html">🏥 Materi Tinggi</a></li>
+        <li><a href="quiz.html">🎯 Latihan Soal</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h6>Topik Ini</h6>
+      <ul>
+        <li><a href="#kritis">🚨 Kritis ICU</a></li>
+        <li><a href="#jiwa">🧘 Jiwa</a></li>
+        <li><a href="#komunitas">🌍 Komunitas</a></li>
+        <li><a href="#manajemen">📋 Manajemen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 NurseLearn · Materi Tinggi Keperawatan S1</span>
+    <span>Made with ❤️ untuk mahasiswa Indonesia 🇮🇩</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

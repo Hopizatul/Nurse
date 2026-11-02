@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Materi menengah keperawatan S1: Farmakologi dasar, keperawatan medikal bedah, patofisiologi, dan prosedur keperawatan. Dilengkapi latihan soal interaktif.">
+  <title>Materi Menengah — NurseLearn Keperawatan S1</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚕️</text></svg>">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo"><div class="logo-icon">🏥</div><span>Nurse<strong>Learn</strong></span></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="dasar.html">Materi Dasar</a></li>
+    <li><a href="menengah.html" class="active">Menengah</a></li>
+    <li><a href="tinggi.html">Tinggi</a></li>
+    <li><a href="quiz.html" class="nav-cta">🎯 Latihan Soal</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-content">
+    <div class="section-badge green" style="margin:0 auto 1rem;">⚕️ Level Menengah</div>
+    <h1>Materi <span class="text-gradient">Menengah Keperawatan</span></h1>
+    <p style="color:var(--dark-subtext);margin-top:1rem;font-size:1.05rem;">Farmakologi, Keperawatan Klinik, Patofisiologi & Prosedur Keperawatan</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem;">
+      <span class="chip">📚 5 Topik Materi</span>
+      <span class="chip">🎯 10 Latihan Soal</span>
+      <span class="chip">💊 Farmakologi & Klinik</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="materi-layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-title">📋 Daftar Materi</div>
+    <ul class="sidebar-nav">
+      <li><a href="#farmakologi" class="active"><span class="nav-icon">💊</span> Farmakologi Dasar</a></li>
+      <li><a href="#tanda-vital"><span class="nav-icon">📊</span> Tanda-Tanda Vital</a></li>
+      <li><a href="#patofisiologi"><span class="nav-icon">🦠</span> Patofisiologi</a></li>
+      <li><a href="#prosedur"><span class="nav-icon">🩺</span> Prosedur Keperawatan</a></li>
+      <li><a href="#medikal-bedah"><span class="nav-icon">🔪</span> Keperawatan Medikal Bedah</a></li>
+    </ul>
+    <hr class="divider">
+    <a href="quiz.html?level=menengah" class="btn btn-sm w-100" style="justify-content:center;background:var(--gradient-menengah);color:white;">🎯 Latihan Soal Menengah</a>
+    <div style="margin-top:1rem;padding:1rem;background:rgba(5,150,105,0.1);border-radius:var(--border-radius-sm);border:1px solid rgba(5,150,105,0.2);">
+      <div style="font-size:0.75rem;color:var(--secondary-light);font-weight:600;margin-bottom:0.5rem;">💡 Ingat Selalu!</div>
+      <p style="font-size:0.78rem;color:var(--dark-subtext);margin:0;">5 Benar pemberian obat: Pasien, Obat, Dosis, Waktu, Rute. Selalu verifikasi sebelum memberikan!</p>
+    </div>
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="materi-content">
+
+    <!-- ========== 1. FARMAKOLOGI ========== -->
+    <div class="materi-section" id="farmakologi">
+      <div class="materi-section-header">
+        <div class="materi-header-left">
+          <div class="materi-section-icon" style="background:rgba(5,150,105,0.15);">💊</div>
+          <div>
+            <div class="materi-section-title">Farmakologi Dasar</div>
+            <div class="materi-section-subtitle">Prinsip Obat, Golongan, Rute & 5 Benar</div>
+          </div>
+        </div>
+        <svg class="accordion-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="materi-section-body">
+        <div class="content-intro">
+          Farmakologi adalah ilmu yang mempelajari obat-obatan: bagaimana obat bekerja (farmakodinamik), bagaimana obat diserap, didistribusikan, dimetabolisme, dan diekskresi (farmakokinetik).
+        </div>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">✅ Prinsip 5 Benar (Five Rights) Pemberian Obat</h4>
+        <div class="info-grid">
+          <div class="info-box blue">
+            <h5>1. Benar Pasien</h5>
+            <ul>
+              <li>Verifikasi ≥2 identitas pasien</li>
+              <li>Nama lengkap + tanggal lahir/nomor RM</li>
+              <li>Jangan mengandalkan lokasi tempat tidur</li>
+              <li>Gunakan gelang identitas pasien</li>
+            </ul>
+          </div>
+          <div class="info-box green">
+            <h5>2. Benar Obat</h5>
+            <ul>
+              <li>Cek nama generik dan nama dagang</li>
+              <li>Waspadai LASA (Look-Alike Sound-Alike)</li>
+              <li>Baca label 3x: ambil, siapkan, berikan</li>
+              <li>Cek tanggal kadaluarsa</li>
+            </ul>
+          </div>
+          <div class="info-box orange">
+            <h5>3. Benar Dosis</h5>
+            <ul>
+              <li>Hitung dosis sesuai resep dokter</li>
+              <li>Perhatikan satuan: mg, mcg, unit, mEq</li>
+              <li>Sesuaikan berat badan (mg/kgBB)</li>
+              <li>Double-check obat high-alert</li>
+            </ul>
+          </div>
+          <div class="info-box purple">
+            <h5>4. Benar Waktu</h5>
+            <ul>
+              <li>Frekuensi: OD, BD, TID, QID</li>
+              <li>Toleransi ±30 menit dari jadwal</li>
+              <li>Perhatikan: sebelum/sesudah makan</li>
+              <li>Jaga interval pemberian tepat</li>
+            </ul>
+          </div>
+          <div class="info-box red">
+            <h5>5. Benar Rute</h5>
+            <ul>
+              <li>Oral (PO): tablet, kapsul, sirup</li>
+              <li>IV (intravena): efek cepat, risiko tinggi</li>
+              <li>IM (intramuskuler): deltoid, paha, bokong</li>
+              <li>SC (subkutan): insulin, heparin</li>
+              <li>Topikal, rektal, sublingual, inhalasi</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">💉 Rute Pemberian Obat & Onset Kerja</h4>
+        <table class="materi-table">
+          <thead>
+            <tr><th>Rute</th><th>Onset Kerja</th><th>Keuntungan</th><th>Kerugian</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Intravena (IV)</td><td>Segera (30 dtk–1 mnt)</td><td>Efek sangat cepat, dosis akurat</td><td>Risiko infeksi, emboli, phlebitis</td></tr>
+            <tr><td>Intramuskuler (IM)</td><td>10–30 menit</td><td>Absorpsi cukup cepat</td><td>Nyeri, risiko cedera saraf</td></tr>
+            <tr><td>Subkutan (SC)</td><td>15–60 menit</td><td>Cocok untuk insulin, heparin</td><td>Absorpsi lebih lambat dari IM</td></tr>
+            <tr><td>Oral (PO)</td><td>30–60 menit</td><td>Mudah, aman, biaya rendah</td><td>First-pass effect, tergantung kondisi GI</td></tr>
+            <tr><td>Sublingual (SL)</td><td>1–5 menit</td><td>Cepat, hindari first-pass</td><td>Rasa tidak enak, beberapa obat saja</td></tr>
+            <tr><td>Inhalasi</td><td>1–5 menit</td><td>Efek lokal paru, dosis kecil</td><td>Teknik perlu dilatih</td></tr>
+          </tbody>
+        </table>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">🏷️ Golongan Obat Penting Keperawatan</h4>
+        <div class="info-grid">
+          <div class="info-box blue">
+            <h5>Antihipertensi</h5>
+            <ul>
+              <li>ACE Inhibitor: captopril, lisinopril (batuk kering)</li>
+              <li>ARB: valsartan, losartan</li>
+              <li>Beta Blocker: bisoprolol, metoprolol (bradikardi)</li>
+              <li>CCB: amlodipin, nifedipin</li>
+              <li>Diuretik: furosemid, HCT</li>
+            </ul>
+          </div>
+          <div class="info-box orange">
+            <h5>Analgesik</h5>
+            <ul>
+              <li>Non-opioid: parasetamol (max 4g/hari dewasa)</li>
+              <li>NSAID: ibuprofen, ketorolak (hindari pd GI ulkus)</li>
+              <li>Opioid: morfin, kodein (monitor depresi napas)</li>
+              <li>Adjuvan: gabapentin, antidepresan</li>
+            </ul>
+          </div>
+          <div class="info-box green">
+            <h5>Antibiotik</h5>
+            <ul>
+              <li>Penisilin: amoksisilin (cek alergi dulu!)</li>
+              <li>Sefalosporin: cefazolin, ceftriaxon, cefepim</li>
+              <li>Fluorokuinolon: siprofloksasin, levofloksasin</li>
+              <li>Habiskan sesuai resep! Cegah resistensi</li>
+            </ul>
+          </div>
+          <div class="info-box red">
+            <h5>Obat Kardiovaskular</h5>
+            <ul>
+              <li>Digoksin: monitor kadar (0.5-2 ng/mL), bradikardi</li>
+              <li>Nitrogliserin: angina, hipotensi ortostatik</li>
+              <li>Heparin: antikoagulan, monitor aPTT</li>
+              <li>Warfarin: monitor INR (target 2-3)</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="quiz-cta" onclick="openQuiz('menengah')">
+          <div class="quiz-cta-left">
+            <div class="quiz-cta-icon">🎯</div>
+            <div><h4>Uji Pengetahuan Farmakologi!</h4><p>10 soal latihan materi menengah dengan pembahasan</p></div>
+          </div>
+          <a class="btn btn-sm">Mulai Soal →</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========== 2. TANDA VITAL ========== -->
+    <div class="materi-section" id="tanda-vital">
+      <div class="materi-section-header">
+        <div class="materi-header-left">
+          <div class="materi-section-icon" style="background:rgba(26,86,219,0.15);">📊</div>
+          <div>
+            <div class="materi-section-title">Tanda-Tanda Vital (TTV)</div>
+            <div class="materi-section-subtitle">Tekanan Darah, Nadi, Suhu, Pernapasan & SpO₂</div>
+          </div>
+        </div>
+        <svg class="accordion-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="materi-section-body">
+        <div class="content-intro">
+          Tanda-tanda vital (TTV) adalah pengukuran fisiologis dasar yang mencerminkan status kesehatan seseorang. Pemantauan TTV merupakan keterampilan fundamental setiap perawat.
+        </div>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">📏 Nilai Normal TTV berdasarkan Usia</h4>
+        <table class="materi-table">
+          <thead>
+            <tr><th>Parameter</th><th>Bayi Baru Lahir</th><th>Anak (1-10 th)</th><th>Remaja/Dewasa</th><th>Lansia (>65 th)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Tekanan Darah</td><td>60-90/30-60 mmHg</td><td>80-110/50-80 mmHg</td><td>90-120/60-80 mmHg</td><td>Normal dapat ↑ sedikit</td></tr>
+            <tr><td>Nadi (HR)</td><td>120-160 x/mnt</td><td>70-110 x/mnt</td><td>60-100 x/mnt</td><td>60-100 x/mnt</td></tr>
+            <tr><td>Suhu</td><td>36.5-37.5°C</td><td>36-37.5°C</td><td>36-37.5°C (aksila)</td><td>35.5-37.5°C</td></tr>
+            <tr><td>Frekuensi Napas</td><td>40-60 x/mnt</td><td>20-30 x/mnt</td><td>12-20 x/mnt</td><td>12-20 x/mnt</td></tr>
+            <tr><td>SpO₂</td><td>95-100%</td><td>95-100%</td><td>95-100%</td><td>95-100%</td></tr>
+          </tbody>
+        </table>
+
+        <div class="info-grid">
+          <div class="info-box red">
+            <h5>🆘 Tekanan Darah — Waspada!</h5>
+            <ul>
+              <li>Hipotensi: TD sistolik &lt;90 mmHg</li>
+              <li>Hipertensi Stage 1: ≥130/80 mmHg</li>
+              <li>Hipertensi Stage 2: ≥140/90 mmHg</li>
+              <li>Krisis hipertensi: ≥180/120 mmHg (DARURAT)</li>
+              <li>Ukur posisi duduk setelah istirahat 5 mnt</li>
+            </ul>
+          </div>
+          <div class="info-box orange">
+            <h5>💓 Nadi — Nilai Abnormal</h5>
+            <ul>
+              <li>Bradikardia: &lt;60 x/mnt</li>
+              <li>Takikardia: &gt;100 x/mnt</li>
+              <li>Raba: arteri radialis (pergelangan tangan)</li>
+              <li>Catat: frekuensi, irama, kekuatan, kesamaan</li>
+              <li>Irama ireguler → auskultasi apikal 1 menit</li>
+            </ul>
+          </div>
+          <div class="info-box blue">
+            <h5>🌡️ Suhu — Interpretasi</h5>
+            <ul>
+              <li>Hipotermia: &lt;36°C</li>
+              <li>Subfebris: 37.5-38°C</li>
+              <li>Febris: 38-39°C</li>
+              <li>Hiperpireksia: &gt;40°C (DARURAT)</li>
+              <li>Cara ukur: aksila, oral, rektal, timpanik</li>
+            </ul>
+          </div>
+          <div class="info-box green">
+            <h5>🌬️ Pernapasan — Abnormal</h5>
+            <ul>
+              <li>Bradipnea: &lt;12 x/mnt</li>
+              <li>Takipnea: &gt;20 x/mnt</li>
+              <li>Apnea: tidak bernapas (&gt;10 detik)</li>
+              <li>Observasi: frekuensi, kedalaman, irama</li>
+              <li>Cheyne-Stokes: pada gagal jantung, stroke</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="quiz-cta" onclick="openQuiz('menengah')">
+          <div class="quiz-cta-left">
+            <div class="quiz-cta-icon">🎯</div>
+            <div><h4>Latihan Soal TTV!</h4><p>Uji pemahaman kamu tentang tanda-tanda vital</p></div>
+          </div>
+          <a class="btn btn-sm">Mulai Soal →</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========== 3. PATOFISIOLOGI ========== -->
+    <div class="materi-section" id="patofisiologi">
+      <div class="materi-section-header">
+        <div class="materi-header-left">
+          <div class="materi-section-icon" style="background:rgba(220,38,38,0.15);">🦠</div>
+          <div>
+            <div class="materi-section-title">Patofisiologi Penyakit Umum</div>
+            <div class="materi-section-subtitle">DM, Hipertensi, CHF, Stroke & Pneumonia</div>
+          </div>
+        </div>
+        <svg class="accordion-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="materi-section-body">
+        <div class="content-intro">
+          Patofisiologi mempelajari mekanisme terjadinya penyakit di tingkat seluler dan organ. Memahami patofisiologi adalah kunci untuk menetapkan diagnosis keperawatan dan intervensi yang tepat.
+        </div>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">🩸 Diabetes Mellitus (DM)</h4>
+        <div class="info-grid">
+          <div class="info-box blue">
+            <h5>DM Tipe 1</h5>
+            <ul>
+              <li>Autoimun: destruksi sel beta pankreas</li>
+              <li>Defisiensi insulin absolut</li>
+              <li>Terjadi pada usia muda</li>
+              <li>Membutuhkan insulin seumur hidup</li>
+              <li>Risiko KAD (Ketoasidosis Diabetik)</li>
+            </ul>
+          </div>
+          <div class="info-box orange">
+            <h5>DM Tipe 2</h5>
+            <ul>
+              <li>Resistensi insulin + defisiensi relatif</li>
+              <li>Faktor risiko: obesitas, usia, genetik</li>
+              <li>Trias klasik: poliuria, polidipsia, polifagia</li>
+              <li>Gula darah puasa (GDP): ≥126 mg/dL (DM)</li>
+              <li>HbA1c: target &lt;7% pada DM terkontrol</li>
+            </ul>
+          </div>
+          <div class="info-box red">
+            <h5>Komplikasi Akut DM</h5>
+            <ul>
+              <li>Hipoglikemia: GDS &lt;70 mg/dL → 15g glukosa oral</li>
+              <li>KAD: pH &lt;7.3, bikarbonat &lt;15, ketonemia</li>
+              <li>HHS (Hiperosmolar Hiperglikemik Sindrom)</li>
+              <li>Monitor: GDS, kesadaran, tanda dehidrasi</li>
+            </ul>
+          </div>
+          <div class="info-box green">
+            <h5>Komplikasi Kronis DM</h5>
+            <ul>
+              <li>Nefropati: proteinuria → gagal ginjal</li>
+              <li>Retinopati: kebutaan (cek funduskopi)</li>
+              <li>Neuropati: parestesia, luka kaki DM</li>
+              <li>Makrovaskular: IMA, stroke, PAD</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">❤️ Gagal Jantung (CHF) — Mekanisme</h4>
+        <div class="info-grid">
+          <div class="info-box blue">
+            <h5>Gagal Jantung Kiri (ADHF)</h5>
+            <ul>
+              <li>CO ↓ → hipoperfusi organ</li>
+              <li>Tekanan balik → edema paru</li>
+              <li>Gejala: ortopnea, PND, ronki basah</li>
+              <li>Klasifikasi NYHA: I-IV</li>
+            </ul>
+          </div>
+          <div class="info-box orange">
+            <h5>Gagal Jantung Kanan</h5>
+            <ul>
+              <li>Tekanan balik ke sirkulasi sistemik</li>
+              <li>Edema tungkai, asites, JVD</li>
+              <li>Hepatomegali (kongesti hepar)</li>
+              <li>Sering akibat CHF kiri kronik</li>
+            </ul>
+          </div>
+          <div class="info-box green">
+            <h5>Penatalaksanaan Keperawatan CHF</h5>
+            <ul>
+              <li>Posisi Fowler tinggi (mengurangi dyspnea)</li>
+              <li>Monitor intake-output cairan</li>
+              <li>Batasi cairan 1-1.5 L/hari</li>
+              <li>Timbang BB harian (deteksi retensi cairan)</li>
+              <li>Monitor edema, JVP, bunyi napas</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="quiz-cta" onclick="openQuiz('menengah')">
+          <div class="quiz-cta-left">
+            <div class="quiz-cta-icon">🎯</div>
+            <div><h4>Uji Pemahaman Patofisiologi!</h4><p>10 soal tentang farmakologi, TTV & patofisiologi</p></div>
+          </div>
+          <a class="btn btn-sm">Mulai Soal →</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========== 4. PROSEDUR KEPERAWATAN ========== -->
+    <div class="materi-section" id="prosedur">
+      <div class="materi-section-header">
+        <div class="materi-header-left">
+          <div class="materi-section-icon" style="background:rgba(124,58,237,0.15);">🩺</div>
+          <div>
+            <div class="materi-section-title">Prosedur Keperawatan Dasar</div>
+            <div class="materi-section-subtitle">IV Line, Injeksi, Kateter, Wound Care & NGT</div>
+          </div>
+        </div>
+        <svg class="accordion-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="materi-section-body">
+        <div class="content-intro">
+          Prosedur keperawatan adalah tindakan klinis yang dilakukan perawat untuk memenuhi kebutuhan pasien. Setiap prosedur harus dilakukan dengan prinsip steril/aseptik dan informed consent.
+        </div>
+
+        <h4 style="color:var(--dark-text);margin-bottom:1rem;">💉 Teknik Injeksi</h4>
+        <table class="materi-table">
+          <thead>
+            <tr><th>Jenis</th><th>Jarum</th><th>Sudut</th><th>Lokasi Utama</th><th>Volume Maks</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Intrakutan (IC)</td><td>26-27G pendek</td><td>5-15°</td><td>Lengan bawah anterior (tes alergi/tuberkulin)</td><td>0.1 mL</td></tr>
+            <tr><td>Subkutan (SC)</td><td>25-26G, ½ inci</td><td>45-90°</td><td>Perut, paha atas, lengan atas, skapula</td><td>1 mL</td></tr>
+            <tr><td>Intramuskuler (IM)</td><td>21-23G, 1-1.5 inci</td><td>90°</td><td>Deltoid, vastus lateralis, dorsogluteal, ventrogluteal</td><td>3-5 mL</td></tr>
+            <tr><td>Intravena (IV)</td><td>18-22G</td><td>15-30°</td><td>Vena sefalika, basilika, mediana cubiti, dorsum manus</td><td>Sesuai order</td></tr>
+          </tbody>
+        </table>
+
+        <div class="info-grid">
+          <div class="info-box green">
+            <h5>🧪 Pemasangan IV Line — Langkah</h5>
+            <ul>
+              <li>Informed consent + cuci tangan</li>
+              <li>Pasang tourniquet 10-15 cm proksimal</li>
+              <li>Desinfeksi 5 cm melingkar → tunggu kering</li>
+              <li>Pungsi vena sudut 15-30°, bevel ke atas</li>
+              <li>Lihat darah flashback → advance kateter</li>
+              <li>Lepas tourniquet → sambung selang → fiksasi</li>
+              <li>Atur tetesan, dokumentasi</li>
+            </ul>
+          </div>
+          <div class="info-box blue">
+            <h5>🚰 Kateterisasi Urin</h5>
+            <ul>
+              <li>Indikasi: retensi urin, monitor UO akurat, operasi</li>
+              <li>Prinsip steril ketat (CAUTI prevention)</li>
+              <li>Ukuran Fr: dewasa wanita 14-16 Fr, pria 16-18 Fr</li>
+              <li>Monitor: warna, jumlah, bau urin</li>
+              <li>Normal UO: ≥0.5 mL/kgBB/jam</li>
+              <li>Lepas sesegera mungkin (risiko CAUTI)</li>
+            </ul>
+          </div>
+          <div class="info-box orange">
+            <h5>🩹 Perawatan Luka (Wound Care)</h5>
+            <ul>
+              <li>Prinsip Moist Wound Healing (luka lembab)</li>
+              <li>Klasifikasi luka: akut vs kronik</li>
+              <li>Stadium luka tekan: I-IV</li>
+              <li>Irigasi dengan NaCl 0.9% (tidak H2O2 rutin)</li>
+              <li>Pilih dressing sesuai tipe eksudat</li>
+              <li>Frekuensi ganti: sesuai kondisi luka</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="quiz-cta" onclick="openQuiz('menengah')">
+          <div class="quiz-cta-left">
+            <div class="quiz-cta-icon">🎯</div>
+            <div><h4>Latihan Soal Prosedur!</h4><p>Uji pemahaman prosedur keperawatan dasar</p></div>
+          </div>
+          <a class="btn btn-sm">Mulai Soal →</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========== 5. MEDIKAL BEDAH ========== -->
+    <div class="materi-section" id="medikal-bedah">
+      <div class="materi-section-header">
+        <div class="materi-header-left">
+          <div class="materi-section-icon" style="background:rgba(217,119,6,0.15);">🔪</div>
+          <div>
+            <div class="materi-section-title">Keperawatan Medikal Bedah</div>
+            <div class="materi-section-subtitle">Pre-Op, Intra-Op, Post-Op & Komplikasi</div>
+          </div>
+        </div>
+        <svg class="accordion-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="materi-section-body">
+        <div class="content-intro">
+          Keperawatan perioperatif mencakup asuhan keperawatan sebelum (pre-operatif), selama (intra-operatif), dan sesudah (post-operatif) prosedur pembedahan untuk mengoptimalkan outcome pasien.
+        </div>
+
+        <div class="info-grid">
+          <div class="info-box blue">
+            <h5>📋 Pre-Operatif (Sebelum Operasi)</h5>
+            <ul>
+              <li>Informed consent operasi & anestesi</li>
+              <li>Puasa: 6 jam makanan padat, 2 jam cairan bening</li>
+              <li>Cek lab: DL, elektrolit, koagulasi, fungsi ginjal/hati</li>
+              <li>Persiapan area operasi (pencukuran jika perlu)</li>
+              <li>Edukasi teknik napas dalam & batuk efektif</li>
+              <li>Pasang IV line, kateter sesuai indikasi</li>
+              <li>Checklist keselamatan bedah (WHO Surgical Safety)</li>
+            </ul>
+          </div>
+          <div class="info-box green">
+            <h5>🏥 Post-Operatif — Pemantauan Utama</h5>
+            <ul>
+              <li>Airway: pastikan jalan napas bebas</li>
+              <li>Monitor TTV tiap 15 mnt (jam pertama)</li>
+              <li>Kaji kesadaran: AVPU / GCS</li>
+              <li>Monitor perdarahan (luka, drain, HGB)</li>
+              <li>Nyeri: skala 0-10 (NRS), berikan analgesik</li>
+              <li>Monitor UO ≥0.5 mL/kgBB/jam</li>
+              <li>Cegah DVT: mobilisasi dini, kompresi</li>
+            </ul>
+          </div>
+          <div class="info-box red">
+            <h5>⚠️ Komplikasi Post-Operatif</h5>
+            <ul>
+              <li>Perdarahan aktif → evaluasi drain, Hb, TTV</li>
+              <li>Atelektasis: napas dalam + incentive spirometer</li>
+              <li>Infeksi luka operasi (SSI): tanda REEDA</li>
+              <li>DVT/PE: nyeri tungkai, sesak tiba-tiba</li>
+              <li>Retensi urin: monitor UO, kaji kandung kemih</li>
+              <li>Ileus paralitik: dengarkan bising usus</li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="quiz-cta" onclick="openQuiz('menengah')">
+          <div class="quiz-cta-left">
+            <div class="quiz-cta-icon">🎯</div>
+            <div><h4>Selesai Materi Menengah!</h4><p>Kerjakan 10 soal untuk menguji seluruh pemahaman kamu</p></div>
+          </div>
+          <a class="btn btn-sm">Mulai Latihan →</a>
+        </button>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:1rem;"><div class="logo-icon">🏥</div><span>Nurse<strong>Learn</strong></span></div>
+      <p>Platform edukasi keperawatan untuk mahasiswa S1 Indonesia.</p>
+    </div>
+    <div class="footer-links">
+      <h6>Materi</h6>
+      <ul>
+        <li><a href="dasar.html">🔬 Materi Dasar</a></li>
+        <li><a href="menengah.html">⚕️ Materi Menengah</a></li>
+        <li><a href="tinggi.html">🏥 Materi Tinggi</a></li>
+        <li><a href="quiz.html">🎯 Latihan Soal</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h6>Topik Ini</h6>
+      <ul>
+        <li><a href="#farmakologi">💊 Farmakologi</a></li>
+        <li><a href="#tanda-vital">📊 Tanda Vital</a></li>
+        <li><a href="#patofisiologi">🦠 Patofisiologi</a></li>
+        <li><a href="#prosedur">🩺 Prosedur</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 NurseLearn · Materi Menengah Keperawatan S1</span>
+    <span>Made with ❤️ untuk mahasiswa Indonesia 🇮🇩</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
